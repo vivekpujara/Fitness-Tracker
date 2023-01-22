@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+    margin: 0 auto;
+    width: 80%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #666;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /*Darker Green */
+  }
+  
+  button:active {
+    background-color: #3e8e41; /*Darker Green */
+    transform: translateY(2px); /* give a pressed effect */
+  }  
+
+/* Add animation to the button */
+@keyframes button-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.94);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button:active {
+    animation: button-animation 0.3s ease; /* animate the button when it is clicked */
+  }
+
+textarea {
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 16px;
+    overflow: auto;
+  }
