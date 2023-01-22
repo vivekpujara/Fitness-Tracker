@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fitness Tracker</title>
+    
+    <link rel="stylesheet" href="main.css">
+  
+  </head>
+ 
+<body>
+  <h1>Fitness Tracker</h1>
+
+<label for="exercise">Exercise:</label>
+<input type="text" id="exercise">
+<br>
+<label for="duration">Duration (in minutes):</label>
+<input type="number" id="duration">
+<br>
+<label for="date">Date:</label>
+<input type="date" id="date">
+<br>
+<button onclick="addToLog()">Add to Log</button>
+<br>
+<br>
+<textarea id="log" rows="10" cols="30"></textarea>
+<button onclick="resetLog()">Reset</button>
+
+<script src="main.js"></script>
+
+</body>
+</html>
